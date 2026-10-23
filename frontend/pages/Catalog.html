@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> PoketDieCast - Catalog </title>
-        <link rel="stylesheet" href="../style/Style_catalog.css">
+        <link rel="stylesheet" href="../styles/Catalog.css">
     </head>
     <body>
         <header>
@@ -19,9 +19,9 @@
         <main>
             <div class="search_box">
                 <input type="search" name="search_bar" id="search_bar" placeholder="Search models" aria-label="Search models">
-                <div class="dropdown" id="scale_menu" role="group" aria-label="Scale"> 
+                <div class="dropdown"> 
                     <button type="button" aria-expanded="false" aria-controls="scale_menu"> Scale </button>
-                    <div class="dropdown_content">
+                    <div class="dropdown_content" id="scale_menu" role="group" aria-label="Scale">
                         <input type="checkbox" name="scale_check" id="scale_64" value="1:64">
                         <label for="scale_64"> 1:64 </label>
                         <input type="checkbox" name="scale_check" id="scale_43" value="1:43">
@@ -59,16 +59,7 @@
                 <button type="button" id="clear_filters"> Clear filters </button>
             </div>
             <p id="result_count" aria-live="polite"></p>
-            <div class="card_grid">
-                <article class="card">
-                    <img src="../assets/Mazda-RX7.png" alt="Car">
-                    <h2> <button type="button" class="card_open" aria-haspopup="dialog"> Car name </button> </h2>
-                    <ul>
-                        <li> Brand name </li>
-                        <li> Scale </li>
-                    </ul>
-                </article>
-            </div>
+            <div class="card_grid" id="card_grid"></div>
             <dialog id="model_dialog" aria-labelledby="dialog_title">
                 <div class="dialog_header">
                     <h2 id="dialog_title"> Car name </h2>
@@ -87,6 +78,7 @@
                     <li> Series </li>
                 </ul>
             </dialog>
+        <script type="module" src="../scripts/Catalog.js"></script>
         </main>
         <footer>
 
