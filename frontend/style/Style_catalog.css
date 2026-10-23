@@ -289,13 +289,12 @@ dialog {
 
 /* The dimmed page behind the open dialog */
 dialog::backdrop {
-    background: rgb(0 0 0 / 0.55);
+    background: rgb(0 0 0 / 0.6);
 }
 
 /* Title + buttons row above the picture.
    (Written for your <span>; if you change it to a <div class="dialog_header">
    the second selector takes over and you can delete "dialog > span".) */
-dialog > span,
 .dialog_header {
     display: flex;
     flex-wrap: wrap;
