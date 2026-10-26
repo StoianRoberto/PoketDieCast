@@ -16,7 +16,8 @@ export const cars = [
         year: 2019,
         series: "Japan Historics",
         collection: "JDM",
-        model_number: "HW-1001"
+        model_number: "HW-1001",
+        img: "../assets/Mazda-RX7.png"
     },
     {
         id: 2,
